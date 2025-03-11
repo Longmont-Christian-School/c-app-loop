@@ -2,5 +2,5 @@
 ## To Run
 ```
 make
-bin/app
+make run
 ```
