@@ -3,18 +3,25 @@
 int main(void) {
 
     char user_input = ' ';
-    
+    int keep_going = 1;
 
-    printf("\nLCS Warriors Computer Club\n");
-    printf("-----------------------------\n");
-    printf("h - Hello World!\n");
-    printf("q - quit\n\n");
-    printf("$ ");
+    while (keep_going != 0) {
 
-    scanf("%s", &user_input);
+        printf("\nLCS Warriors Computer Club\n");
+        printf("-----------------------------\n");
+        printf("h - Hello World!\n");
+        printf("q - quit\n\n");
+        printf("$ ");
 
-    if (user_input == 'h') {
-        printf("Hello World!\n");
+        scanf("%s", &user_input);
+
+        if (user_input == 'h') {
+            keep_going = 1;
+            printf("Hello World! Keep going: %d\n", keep_going);
+        } else if (user_input == 'q') {
+            printf("exiting application...\n");
+            keep_going = 0;
+        }
     }
 
 }
