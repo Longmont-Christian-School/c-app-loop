@@ -1,7 +1,8 @@
 all: clean build
 
-clean: 
+clean:
 	rm -f bin/app
-
 build:
 	gcc main.c -o bin/app
+run:
+	bin/app
