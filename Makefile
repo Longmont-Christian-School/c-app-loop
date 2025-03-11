@@ -5,3 +5,6 @@ clean:
 
 build:
 	gcc main.c -o bin/app
+
+run:
+	bin/app
